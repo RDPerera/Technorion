@@ -1,0 +1,76 @@
+
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 137, 207);
+    width: 100%;
+    height: 100vh;
+}
+.sub-container
+{
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgb(117, 117, 117);
+}
+.header
+{
+    color:rgb(32, 137, 207);
+    font-size: xx-large;
+    font-weight: 600;
+    padding-bottom: 20px ;
+}
+.header span
+{
+    color: #333;
+    font-size: x-large;
+    font-weight: 500;
+}
+.row
+{
+    padding-bottom: 10px;
+}
+label
+{
+    width: 100px;
+    float: left;
+}
+sub-btn
+{
+    float: right;
+}
+#last-row
+{
+    float:right;
+}
+.input-fields
+{
+    width:250px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(238, 238, 238);
+}
+#submit-btn
+{
+    background-color:rgb(32, 137, 207);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+}
+#submit-btn:hover{
+    background-color: white;
+    color:rgb(32, 137, 207);
+    box-shadow: 0 0 3px 1px rgb(131, 174, 243);
+    
+}
