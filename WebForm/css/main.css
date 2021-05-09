@@ -1,6 +1,7 @@
 
 body{
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
     display: flex;
@@ -73,4 +74,110 @@ sub-btn
     color:rgb(32, 137, 207);
     box-shadow: 0 0 3px 1px rgb(131, 174, 243);
     
+}
+
+.toggle-btn-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+    transition: display ;
+}
+
+.toggle-btn-row button{
+    background-color:rgb(32, 137, 207);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+    outline: none;
+}
+
+.toggle-btn-row button:hover{
+    background-color: white;
+    color:rgb(32, 137, 207);
+    box-shadow: 0 0 3px 1px rgb(131, 174, 243);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a:hover {
+    color: rgb(32, 137, 207);;
+    transition: background 0.5s;
+}
+
+#menuItems {
+    max-height: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+a.active {
+    color: rgb(32, 137, 207);;
+}
+
+a.link:hover {
+    color: rgb(32, 137, 207);;
+}
+
+select:focus {
+    outline: none;
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+@media only screen and (max-width: 920px) {
+    nav ul {
+        position: absolute;
+        top: 85px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        z-index: 5;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 50px 10px;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
 }
