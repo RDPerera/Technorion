@@ -64,39 +64,6 @@
     </div>
   </div>
 
-  <script>
-
-    var menuItems = document.getElementById("menuItems");
-    var menuBtn = document.getElementById("menuToggleBtn");
-    
-    menuItems.style.maxHeight = "0px";
-
-    menuBtn.addEventListener("click", function () {
-      if (menuItems.style.maxHeight == "0px") {
-        menuItems.style.maxHeight = "300px";
-      } else {
-        menuItems.style.maxHeight = "0px";
-      }
-    });
-
-    const formSec = document.getElementById("contactFormSec");
-    const button = document.getElementById("formToggleBtn");
-
-    window.addEventListener("load", function () {
-      formSec.style.display = "none";
-    });
-
-    button.addEventListener("click", function () {
-
-      if (formSec.style.display == "none") {
-        formSec.style.display = "block";
-        button.textContent = "Hide Contact Form";
-      } else if (formSec.style.display == "block") {
-        formSec.style.display = "none";
-        button.textContent = "Show Contact Form";
-      }
-    });
-  </script>
 </body>
 
 </html>
